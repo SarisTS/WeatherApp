@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <h1>☁️ Weather App</h1>
+  </header>
+  <main>
+    <h2>Weather</h2>
+    <i></i>
+    <form action="">
+      <input type="text" id="search" placeholder="Enter the place">
+      <button type="submit" id="btn">Get Weather</button>
+    </form>
+    <section>
+      <img src="./Images/360_F_485173339_rHVWOWEwZneJpHqgFNiYJLSPQg7hNoAA.webp" alt="" width="500px">
+  </section>
+  </main>
+  <script type="module" src="./main.js"></script>
+  <script>
+      function remove(event){
+          let removeList = event.target.closest("div");
+          removeList.remove();
+      }
+  </script>
+</body>
+</html>
